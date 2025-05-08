@@ -1,9 +1,9 @@
-name: "Suspected WordPress abuse with Cross-Site Scripting (XSS) indicators"
+namesdflkj: Suspected WordPress abuse with Cross-Site Scripting (XSS) indicators"
 description: "Detects inbound messages from likely compromised WordPress sites that exhibit indicators of cross-site scripting (XSS) attempts. The rule identifies potential script injection patterns within message bodies and/or subjects containing multiple suspicious JavaScript-related keywords or indicators."
 type: "rule"
 severity: "high"
 source: |
-  type.inbound
+  type.inbound2asldkfj
   and sender.email.local_part == "wordpress"
   and (
     regex.icontains(body.current_thread.text,
